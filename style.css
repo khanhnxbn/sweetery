@@ -1,0 +1,186 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    min-width: 200px;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+    margin-bottom: 0.5rem;
+}
+
+.item p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #ff4d3a;
+}
+
+/* Cart Section */
+.cart {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    border-radius: 8px;
+}
+
+.cart h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.cart li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#checkout-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#checkout-btn:hover {
+    background-color: #ff4d3a;
+}
+
+/* Address Form Section */
+.address-form {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    border-radius: 8px;
+}
+
+.address-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.address-form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.address-form input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.address-form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.address-form button:hover {
+    background-color: #ff4d3a;
+}
