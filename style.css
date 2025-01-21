@@ -37,12 +37,16 @@ main {
     margin: 0 auto;
 }
 
+
 .menu {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
     width: 100%;
     margin-bottom: 3rem;
+}
+.ten-menu{
+    white-space:pre;
 }
 
 .item {
@@ -183,4 +187,21 @@ main {
 
 .address-form button:hover {
     background-color: #ff4d3a;
+}
+
+/* Remove from Cart Button */
+.remove-from-cart {
+    background-color: #ff4d3a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.remove-from-cart:hover {
+    background-color: #e04a37;
 }

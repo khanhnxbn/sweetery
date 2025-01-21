@@ -11,11 +11,29 @@ function updateCart() {
     Object.keys(cart).forEach(item => {
         const li = document.createElement('li');
         li.textContent = `${item} x${cart[item].quantity} - ${cart[item].price * cart[item].quantity} VND`;
+
+        // Create remove button for each cart item
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.classList.add('remove-from-cart');
+        removeBtn.setAttribute('data-item', item);
+
+        removeBtn.addEventListener('click', function() {
+            removeItemFromCart(item); // Remove the item
+        });
+
+        li.appendChild(removeBtn);
         cartItems.appendChild(li);
         totalPrice += cart[item].price * cart[item].quantity;
     });
 
     document.getElementById('total-price').textContent = totalPrice.toLocaleString() + " VND";
+}
+
+// Function to remove item from cart
+function removeItemFromCart(item) {
+    delete cart[item]; // Remove item from cart object
+    updateCart(); // Update the cart display
 }
 
 // Event listeners for Add to Cart buttons
