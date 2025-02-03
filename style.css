@@ -189,7 +189,7 @@ main {
     background-color: #ff4d3a;
 }
 
-/* Remove from Cart Button */
+/* Cart Item Remove Button */
 .remove-from-cart {
     background-color: #ff4d3a;
     color: white;
@@ -198,10 +198,10 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    margin-left: 10px;
     transition: background-color 0.3s;
+    margin-left: 1rem; /* Space between text and remove button */
 }
 
 .remove-from-cart:hover {
-    background-color: #e04a37;
+    background-color: #e63946;
 }
